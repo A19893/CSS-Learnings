@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: beige;
+        height: 650px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+         align-items: center;
+      }
+      .box{
+        --custom-color:aqua;
+         background-color: var(--custom-color);
+         width: 330px;
+         height: 330px;
+         border: 1px solid brown;
+         margin: 5px;
+         padding: 5px;
+         /* box-shadow: -30px 15px gray; First Way */
+         /* box-shadow: 10px 15px 5px 5px gray; */
+         /* box-shadow: 10px 15px 5px 20px brown; third way */
+         box-shadow:  10px 15px 5px gray,10px 15px 5px 5px brown;
+      }
+      .box img{
+        height:100px;
+        width:100px;
+      }
+      .box h2{
+        text-shadow: 2px 3px 1px white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%); -->
+    <!-- First one is x ka offet,secodn one ois y ka offset, third one is blur -->
+    <!-- radius,fourth one is color -->
+    <div class="container">
+      <div class="box">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LekJP3sxq6FdYUdRJTlAvdE2zhSR0eptPg&usqp=CAU"
+        />
+        <h2 >Welcome to codeHelp</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum
+          ullam. Porro pariatur minus, dolor reiciendis eius ipsa minima quae
+          eligendi? Quis esse fugiat exercitationem, sed, dolores suscipit
+          laudantium repudiandae, cumque magni eaque iure quod ipsam mollitia
+          nemo maxime ad? Minus? Eveniet magni a tenetur suscipit tempore atque
+          enim voluptatibus, nihil odit maxime, fugit dolore quibusdam corporis
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
